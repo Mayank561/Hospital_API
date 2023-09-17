@@ -1,10 +1,19 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/Hospital_Api');
-const db = mongoose.connection;
 
-db.on('error',console.error.bind(console,'Error connecting to the db'));
-db.once('open',function(){
-    console.log("SUCCESSFULLY CONNECTED TO THE DATABASE");
+async function connectToDatabase() {
+  try {
+    await mongoose.connect('mongodb://127.0.0.1:27017/Hospital_Api', {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+     
+    });
+    console.log('Successfully connected to the database');
+  } catch (error) {
+    console.error('Error connecting to the database:', error);
+    process.exit(1); 
+  }
+}
 
-});
-module.exports = db;
+connectToDatabase();
+
+module.exports = mongoose.connection;
