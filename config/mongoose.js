@@ -2,11 +2,7 @@ const mongoose = require('mongoose');
 
 async function connectToDatabase() {
   try {
-<<<<<<< HEAD
     await mongoose.connect('mongodb+srv://mayankguptaedu:mayank@cluster0.rs35ezb.mongodb.net/Hospital_Api', {
-=======
-    await mongoose.connect('mongodb://localhost:27017/Hospital_Api', {
->>>>>>> d7afea64cec0ef17dbf8c16338c066875a9f16f5
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
