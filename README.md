@@ -1,4 +1,3 @@
-
 # Hospital Management API
 
 Welcome to the Hospital Management API project. This API is designed to facilitate the management of doctors and patients in a hospital setting, with a specific focus on COVID-19 testing, quarantine, and patient well-being.
@@ -7,19 +6,6 @@ Welcome to the Hospital Management API project. This API is designed to facilita
 
 - **Node.js**: JavaScript runtime for building the server-side application.
 - **MongoDB**: A NoSQL database for storing and managing data.
-
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Doctors](#doctors)
-  - [Patients](#patients)
-  - [Reports](#reports)
-- [Data Models](#data-models)
-- [Authentication](#authentication)
-- [Folder Structure](#folder-structure)
-- [Design](#design)
-- [Extra Points](#extra-points)
 
 ## Installation
 
