@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 async function connectToDatabase() {
   try {
-    await mongoose.connect('mongodb://127.0.0.1:27017/Hospital_Api', {
+    await mongoose.connect('mongodb://localhost:27017/Hospital_Api', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
